@@ -55,78 +55,78 @@ public class PresidentAppDatesInnerClasses {
 	}
 
 	public void start() {
-//		this.printPresidents(this.getPresidents());
+		this.printPresidents(this.getPresidents());
 		
 //		// SORTING 1 MEMBER CLASS
-//		System.out.println("------------ Sorted by party and term ------------");
-//		this.printPresidents(this.sortByPartyAndTerm());
+		System.out.println("------------ Sorted by party and term ------------");
+		this.printPresidents(this.sortByPartyAndTerm());
 
 		// SORTING 2 LOCAL CLASS
-//		System.out.println("------------ Sorted by reason and term ------------");
-//		this.printPresidents(this.sortByReasonAndTermNumber());
+		System.out.println("------------ Sorted by reason and term ------------");
+		this.printPresidents(this.sortByReasonAndTermNumber());
 
 		// SORTING 3 ANONYMOUS CLASS
-//		System.out.println("------------ Sorted by last name ------------");
-//		this.printPresidents(this.sortByLastName());
+		System.out.println("------------ Sorted by last name ------------");
+		this.printPresidents(this.sortByLastName());
 		
 		// FILTERING 1 SEPERATE CLASS
-//		System.out.println("------------ Whig results ------------");
-//		this.printPresidents(filter("Whig", new PresidentPartyMatcher()));
+		System.out.println("------------ Whig results ------------");
+		this.printPresidents(filter("Whig", new PresidentPartyMatcher()));
 
 		// FILTERING 2 MEMBER CLASS
-//		System.out.println("------------ C Presidents ------------");
-//		this.printPresidents(filter("C", new PresidentNameMatcher()));
+		System.out.println("------------ C Presidents ------------");
+		this.printPresidents(filter("C", new PresidentNameMatcher()));
 
 		// FILTERING 3 LOCAL CLASS
-//		System.out.println("------------ Term ended ------------");
-//		class WhyLeftOfficeMatcher implements PresidentMatcher {
-//			@Override
-//			public boolean matches(President pres, String string) {
-//				return pres.getWhyLeftOffice().equalsIgnoreCase(string);
-//			}
-//		}
-//		this.printPresidents(filter("Term ended", new WhyLeftOfficeMatcher()));
+		System.out.println("------------ Term ended ------------");
+		class WhyLeftOfficeMatcher implements PresidentMatcher {
+			@Override
+			public boolean matches(President pres, String string) {
+				return pres.getWhyLeftOffice().equalsIgnoreCase(string);
+			}
+		}
+		this.printPresidents(filter("Term ended", new WhyLeftOfficeMatcher()));
 
 		// FILTERING 4.i ANONYMOUS CLASS
-//		System.out.println("------------ C Presidents Anonymous ------------");
-//		PresidentMatcher cNamePresMatcher = new PresidentMatcher() {
-//			@Override
-//			public boolean matches(President pres, String string) {
-//				return pres.getFirstName().startsWith(string);
-//			}
-//		};
-//		this.printPresidents(filter("C", cNamePresMatcher));
+		System.out.println("------------ C Presidents Anonymous ------------");
+		PresidentMatcher cNamePresMatcher = new PresidentMatcher() {
+			@Override
+			public boolean matches(President pres, String string) {
+				return pres.getFirstName().startsWith(string);
+			}
+		};
+		this.printPresidents(filter("C", cNamePresMatcher));
 
 		// FILTERING 4.ii ANONYMOUS CLASS
-//		System.out.println("------------ Democrat Presidents Anonymous ------------");
-//		PresidentMatcher democratPresMatcher = new PresidentMatcher() {
-//			@Override
-//			public boolean matches(President pres, String string) {
-//				return pres.getParty().contains(string);
-//			}
-//		};
-//		this.printPresidents(filter("Democrat", democratPresMatcher));
+		System.out.println("------------ Democrat Presidents Anonymous ------------");
+		PresidentMatcher democratPresMatcher = new PresidentMatcher() {
+			@Override
+			public boolean matches(President pres, String string) {
+				return pres.getParty().contains(string);
+			}
+		};
+		this.printPresidents(filter("Democrat", democratPresMatcher));
 
 		// FILTERING 4.iii ANONYMOUS CLASS
-//		System.out.println("------------ Presidents Died in office Anonymous ------------");
-//		PresidentMatcher diedInOfficePresMatcher = new PresidentMatcher() {
-//			@Override
-//			public boolean matches(President pres, String string) {
-//				return pres.getWhyLeftOffice().equalsIgnoreCase(string);
-//			}
-//		};
-//		this.printPresidents(filter("Died in office", diedInOfficePresMatcher));
+		System.out.println("------------ Presidents Died in office Anonymous ------------");
+		PresidentMatcher diedInOfficePresMatcher = new PresidentMatcher() {
+			@Override
+			public boolean matches(President pres, String string) {
+				return pres.getWhyLeftOffice().equalsIgnoreCase(string);
+			}
+		};
+		this.printPresidents(filter("Died in office", diedInOfficePresMatcher));
 
 		// FILTERING 4.iv ANONYMOUS CLASS
-//		System.out.println("------------ Presidents Single Election Anonymous ------------");
-//		PresidentMatcher singleElectionPresMatcher = new PresidentMatcher() {
-//			@Override
-//			public boolean matches(President pres, String string) {
-//				int electionsWon = Integer.parseInt(string);
-//				return pres.getElectionsWon() == electionsWon;
-//			}
-//		};
-//		this.printPresidents(filter("1", singleElectionPresMatcher));
+		System.out.println("------------ Presidents Single Election Anonymous ------------");
+		PresidentMatcher singleElectionPresMatcher = new PresidentMatcher() {
+			@Override
+			public boolean matches(President pres, String string) {
+				int electionsWon = Integer.parseInt(string);
+				return pres.getElectionsWon() == electionsWon;
+			}
+		};
+		this.printPresidents(filter("1", singleElectionPresMatcher));
 
 		// FILTERING 4.v ANONYMOUS CLASS
 		System.out.println("------------ Presidents 19th Century Anonymous ------------");

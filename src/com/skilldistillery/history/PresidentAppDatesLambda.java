@@ -57,7 +57,7 @@ public class PresidentAppDatesLambda {
 
 	public void start() {
 
-//		this.printPresidents(this.getPresidents());
+		this.printPresidents(this.getPresidents());
 
 //		// SORTING 1
 		System.out.println("------------ Sorted by party and term ------------");
